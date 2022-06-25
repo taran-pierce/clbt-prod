@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "cd app && npm i",
     "dev": "cd app && npx next dev",
-    "build": "cd app && npx next build",
     "start": "cd app && npx next start",
-    "prodBuild": "cd app && rm -rf out/ && next build && next export",
-    "moveBuild": "mv app/out/* ./"
+    "build:create": "cd app && npx next build && npx next export",
+    "build:move": "mv app/out/* ./",
+    "build:clean": "bash clean.sh"
   },
   "repository": {
     "type": "git",
