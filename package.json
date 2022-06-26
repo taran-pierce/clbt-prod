@@ -1,6 +1,6 @@
 {
   "name": "clbt-prod",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Production version of site",
   "main": "index.html",
   "scripts": {
