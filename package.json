@@ -1,13 +1,13 @@
 {
   "name": "clbt-prod",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Production version of site",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "setup": "cd app && npm i",
+    "setup": "cd app && npm i && cd ../email-server",
     "dev": "cd app && npx next dev",
-    "start": "cd app && npx next start",
+    "start": "cd email-server && node server.js",
     "build:create": "cd app && npx next build && npx next export",
     "build:move": "mv app/out/* ./",
     "build:clean": "bash clean.sh"
