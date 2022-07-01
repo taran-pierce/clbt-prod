@@ -1,6 +1,6 @@
 {
   "name": "clbt-prod",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Production version of site",
   "main": "index.html",
   "scripts": {
@@ -8,6 +8,7 @@
     "setup": "cd app && npm i && cd ../email-server",
     "dev": "cd app && npx next dev",
     "start": "cd email-server && node server.js",
+    "prodBuild": "bash create.sh",
     "build:create": "cd app && npx next build && npx next export",
     "build:move": "mv app/out/* ./",
     "build:clean": "bash clean.sh"
