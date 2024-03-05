@@ -1,4 +1,4 @@
-# clbt-prod
+# clbt-prod (depreciated)
 
 ## Commands
 - `npm run setup` - setup and install packages for site
